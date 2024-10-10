@@ -1,3 +1,6 @@
+#ifndef MSD700_UWB_H
+#define MSD700_UWB_H
+
 #include <Arduino.h>
 #include <stdint.h>
 
@@ -37,3 +40,5 @@ public:
     void get_data(float* dist, float* rho, float* theta);
 
 };
+
+#endif
