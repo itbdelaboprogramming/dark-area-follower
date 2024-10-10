@@ -37,8 +37,10 @@ public:
     ~MSD700_UWB();
 
     void update_uwb_data();
-    void get_data(float* dist, float* rho, float* theta);
-
+    float get_dist();
+    float get_deviation();
+    float get_rho();
+    float get_theta();
 };
 
 #endif

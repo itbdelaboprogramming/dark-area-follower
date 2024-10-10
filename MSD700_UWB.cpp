@@ -38,8 +38,15 @@ void MSD700_UWB::update_uwb_data(){
     }
 }
 
-void MSD700_UWB::get_data(float* dist, float* rho, float* theta){
-    *dist = this->distance;
-    *rho = this->polar_distance;
-    *theta = this->polar_heading;
+float MSD700_UWB::get_dist(){
+    return this->distance;
+}
+float MSD700_UWB::get_deviation(){
+    return this->deviation;
+}
+float MSD700_UWB::get_rho(){
+    return this->polar_distance;
+}
+float MSD700_UWB::get_theta(){
+    return this->polar_heading;
 }

@@ -13,12 +13,11 @@ void loop() {
     uwb1.update_uwb_data();
 
     // Get and Print all data;
-    uwb1.get_data(&dist, &rho, &theta);
     Serial.print("dist: ");
-    Serial.println(dist);
+    Serial.println(uwb1.get_dist());
     Serial.print("rho: ");
-    Serial.println(rho);
+    Serial.println(uwb1.get_rho());
     Serial.print("theta: ");
-    Serial.println(theta);
+    Serial.println(uwb1.get_theta());
     delay(100);
 }
